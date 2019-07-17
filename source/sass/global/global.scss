@@ -2,9 +2,13 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: $ptsans;
   font-size: 14px;
   font-weight: 400;
-  color: hsl(0, 0, 20);
+  color: $text-main;
   text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
 }
