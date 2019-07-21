@@ -1,14 +1,30 @@
 //Шрифты
 $ptsans: "PT Sans", "Arial", sans-serif;
 
-//Цвет текста
-$text-main: hsl(0, 0%, 20%);
-$text-light: hsl(0, 0%, 100%);
-$text-dark: hsl(0, 0%, 0%);
-
 //Цвет фона
+$bg-basic: hsl(0, 0%, 100%);
 $bg-main: hsl(203, 47%, 66%);
 $bg-secondary: hsl(0, 0%, 95%);
 $bg-banner: hsl(12, 13%, 47%);
 $bg-features: hsl(0, 0%, 93%);
 $bg-map: hsl(40, 20%, 94%);
+
+//Цвет границ
+$border-color: hsl(203, 27%, 53%);
+
+//Цвет текста
+$text-main: hsl(0, 0%, 20%);
+$text-light: hsl(0, 0%, 100%);
+$text-dark: hsl(0, 0%, 0%);
+
+//Цвет ссылок
+
+$link-main: $text-light;
+
+//Здесь должныб ыть дектопный вариант ссылок в меню
+
+// Цвет фона ссылок
+
+$bg-link-main: $bg-basic;
+$bg-link-main--hover: hsl(203, 42%, 58%);
+$bg-link-main--active: hsl(202, 44%, 54%);

@@ -1,0 +1,63 @@
+.main-nav {
+
+  margin: 0 auto;
+
+  background-color: $bg-basic;
+
+  &__toggle {
+
+    cursor: pointer;
+
+    &--close {
+
+    }
+
+  }
+
+  &__list {
+
+    margin: 0;
+    padding: 0;
+
+    background-color: $bg-link-main;
+
+    @include list-style;
+
+    &__item {
+
+      box-sizing: border-box;
+      margin: 0;
+      padding: 20px 120px;
+
+      text-align: center;
+
+      border-top: 1px solid $border-color;
+
+      &:hover,
+      &:focus {
+
+        background-color: $bg-link-main--hover;
+
+      }
+
+      &:active {
+
+        background-color: $bg-link-main--active;
+
+      }
+
+    }
+
+    &__link {
+
+      color: $text-light;
+
+      &:active {
+        opacity: 0.3;
+      }
+
+    }
+
+  }
+
+}
