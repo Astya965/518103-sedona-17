@@ -1,0 +1,26 @@
+.intro {
+
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain, cover;
+
+  &__img {
+
+    margin: 90px auto;
+
+  }
+
+  &__text {
+
+    margin-top: 43px;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $text-dark;
+
+  }
+
+}
