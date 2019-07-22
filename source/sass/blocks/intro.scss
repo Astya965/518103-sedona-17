@@ -1,11 +1,10 @@
 .intro {
-
   &__wrapper {
-  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
 
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain, cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain, cover;
   }
 
   &__img {
@@ -21,12 +20,9 @@
     line-height: 24px;
     color: $text-main;
 
-
     &--main {
       @include main-title;
       line-height: 26px;
     }
-
   }
-
 }

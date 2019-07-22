@@ -10,7 +10,7 @@
 
   &__number,
   &__text {
-    @include main-text
+    @include main-text;
     color: $text-main;
     line-height: 21px;
   }
