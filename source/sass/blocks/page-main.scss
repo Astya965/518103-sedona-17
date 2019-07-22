@@ -3,21 +3,20 @@
   text-align: center;
 
   &__intro {
-
+    margin-top: 56px;
   }
 
   &__advantages {
-
     padding-top: 30px;
-
   }
 
   &__booking {
-
+    padding-top: 33px;
   }
 
   &__map {
-
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
-
 }

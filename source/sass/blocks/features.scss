@@ -1,0 +1,19 @@
+.features {
+
+  background-color: $bg-basic;
+
+  &__item {
+    padding: 20px;
+  }
+
+  &__title {
+    @include main-title;
+    line-height: 26px;
+  }
+
+  &__text {
+    @include main-text;
+    color: $text-main;
+    line-height: 21px;
+  }
+}

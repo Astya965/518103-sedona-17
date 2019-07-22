@@ -1,0 +1,22 @@
+.page-footer {
+
+  margin-top: 31px;
+  text-align: center;
+
+  &__tag {
+    color: $text-dark;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  &__social {
+    margin: 70px;
+  }
+
+  &__copyright {
+    @include text-main;
+    color: $text-main;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,33 @@
+.advantage {
+
+  color: $text-main;
+  background-color: $bg-secondary;
+
+  &__title {
+    @include main-title;
+    line-height: 26px;
+  }
+
+  &__number,
+  &__text {
+    @include main-text
+    color: $text-main;
+    line-height: 21px;
+  }
+
+  &--main {
+    margin: 0;
+    padding: 0;
+    color: $text-light;
+    background-color: $bg-main;
+  }
+
+  &__wrapper {
+    padding: 40px;
+  }
+
+  &__features-list {
+    @include list-style;
+    padding: 0;
+  }
+}

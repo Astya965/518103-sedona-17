@@ -1,0 +1,18 @@
+.advantages {
+
+  &__intro {
+    @include main-text;
+    color: $text-main;
+    line-height: 26px;
+  }
+
+  &__list {
+    @include list-style;
+    margin-top: 47px;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 30px;
+  }
+}

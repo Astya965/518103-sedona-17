@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  padding: 17px 45px;
+
+  color: $text-light;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+
+  background-color: $btn-main;
+
+  &:hover,
+  &:focus {
+    background-color: $btn--hover;
+  }
+
+  &:active {
+    color: $text-opacity;
+    background-color: $btn--active;
+  }
+
+  &--disabled {
+    background-color: $btn--disabled;
+  }
+}

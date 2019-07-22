@@ -19,10 +19,10 @@
             <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-navt__link" href="photo.html">Фото и видео</a>
+            <a class="main-nav__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-navt__link" href="form.html">Форма отзыва</a>
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -32,15 +32,15 @@
     </header>
     <main class="page-main">
       <header class="page-main__intro intro">
-        <img class="intro__img" src="http://placehold.it/460x350" width="460" height="350" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon Sucks">
+        <div class="intro__wrapper">
+          <img class="intro__img" src="http://placehold.it/460x350" width="460" height="350" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon Sucks">
+        </div>
         <h1 class="intro__title visually-hidden">Добро пожаловать в Седону!</h1>
-        <p class="intro__text">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+        <p class="intro__text intro__text--main ">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       </header>
       <section class="page-main__advantages advantages">
-        <div class="advantages__header">
-          <h2 class="visually-hidden">Приемущества Седоны</h2>
-          <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
-        </div>
+        <h2 class="visually-hidden">Приемущества Седоны</h2>
+        <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
         <ol class="advantages__list">
           <li class="advantages__item advantage advantage--main">
             <div class="advantage__main">
@@ -58,7 +58,7 @@
                 </li>
                 <li class="features__item feature--gifts">
                   <h4 class="features__title">Сувениры</h4>
-                  <p class="featurse__text">Не только китайского,<br> но и местного производства!</p>
+                  <p class="features__text">Не только китайского,<br> но и местного производства!</p>
                 </li>
                 <li class="features__item feature--food">
                   <h4 class="features__title">Еда</h4>
@@ -98,10 +98,7 @@
       </section>
       <section class="page-main__map map">
         <h2 class="visually-hidden">Карта Седоны</h2>
-        <div class="map__iframe">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1452268.157041378!2d-112.66048837237325!3d34.81795392260601!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1563100117798!5m2!1sru!2sru" width="600" height="450" allowfullscreen></iframe>
-          <img class="map__image" src="http://placehold.it/320x350" width="320" height="350" alt="Фотография каньона">
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1452268.157041378!2d-112.66048837237325!3d34.81795392260601!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1563100117798!5m2!1sru!2sru" width="600" height="450" allowfullscreen></iframe>
       </section>
     </main>
     <footer class="page-footer">

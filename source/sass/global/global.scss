@@ -7,8 +7,15 @@ body {
   font-weight: 400;
   color: $text-main;
   text-transform: uppercase;
+  background-color: $bg-basic;
 }
 
 a {
   text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
 }

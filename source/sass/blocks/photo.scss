@@ -1,0 +1,28 @@
+.photo {
+
+  &__link {
+    padding: 20px;
+  }
+
+  &__info {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $text-dark;
+  }
+
+  &__autor {
+    font-weight: 400;
+    color: $text-main;
+    text-transform: none;
+  }
+
+  &__like {
+    margin-top: 20px;
+    margin-bottom: 22px;
+  }
+}
