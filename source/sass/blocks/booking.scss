@@ -1,25 +1,22 @@
-.booking {
-  &__title {
-    margin: 0;
-    padding: 0;
+.booking__title {
+  margin: 0;
+  padding: 0;
 
-    font-size: 21px;
-    font-weight: 700;
-    color: $text-dark;
-    line-height: 26px;
-  }
+  font-size: 21px;
+  font-weight: 700;
+  color: $text-dark;
+  line-height: 26px;
+}
 
-  &__text {
-    margin: 0;
-    margin-top: 20px;
-    padding: 0;
+.booking__text {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
 
-    @include main-text;
-    color: $text-main;
-    line-height: 21px;
-  }
+  color: $text-main;
+  line-height: 21px;
+}
 
-  &__btn {
-    margin: 20px auto 50px;
-  }
+.booking__btn {
+  margin: 20px auto 50px;
 }

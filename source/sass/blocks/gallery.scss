@@ -1,5 +1,3 @@
-.gallery {
-  &__list {
-    @include list-style;
-  }
+.gallery__list {
+  @include list-style;
 }

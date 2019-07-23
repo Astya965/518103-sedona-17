@@ -2,18 +2,3 @@
   list-style: none;
   padding: 0;
 }
-
-@mixin main-text {
-  font-family: $ptsans;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-@mixin main-title {
-  font-family: $ptsans;
-  font-size: 18px;
-  font-weight: 700;
-  color: $text-dark;
-  text-transform: uppercase;
-}

@@ -1,46 +1,45 @@
 .main-nav {
-
   margin: 0 auto;
 
   background-color: $bg-basic;
+}
 
-  &__toggle {
-    cursor: pointer;
+.main-nav__toggle {
+  cursor: pointer;
+}
+
+.main-nav__list {
+  @include list-style;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: $bg-link-main;
+}
+
+.main-nav__item {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px 120px;
+
+  text-align: center;
+
+  border-top: 1px solid $border-color;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-link-main--hover;
   }
 
-  &__list {
-    @include list-style;
-
-    margin: 0;
-    padding: 0;
-
-    background-color: $bg-link-main;
+  &:active {
+    background-color: $bg-link-main--active;
   }
+}
 
-  &__item {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 20px 120px;
+.main-nav__link {
+  color: $text-light;
 
-    text-align: center;
-
-    border-top: 1px solid $border-color;
-
-    &:hover,
-    &:focus {
-      background-color: $bg-link-main--hover;
-    }
-
-    &:active {
-      background-color: $bg-link-main--active;
-    }
-  }
-
-  &__link {
-    color: $text-light;
-
-    &:active {
-      color: $text-opacity;
-    }
+  &:active {
+    color: $text-opacity;
   }
 }
