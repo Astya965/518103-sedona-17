@@ -1,4 +1,8 @@
 .intro__wrapper {
+  display: flex;
+  align-items: center;
+  height: 390px;
+
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
 
   background-repeat: no-repeat;
@@ -7,18 +11,50 @@
 }
 
 .intro__img {
-  margin: 90px auto;
+  margin: auto;
 }
 
 .intro__text {
-  margin: 0;
-  margin-top: 43px;
-  padding: 0;
+  width: 255px;
+  margin: 0 auto;
+  margin-top: 40px;
 
   line-height: 24px;
-  color: $text-main;
 
   &--main {
     line-height: 26px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__wrapper {
+    width: $tablet-width;
+    height: 520px;
+    margin: 0 auto;
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain, cover;
+  }
+
+  .intro__text {
+    width: 490px;
+    margin-top: 49px;
+
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__wrapper {
+    width: $desktop-width;
+    height: 520px;
+    margin: 0 auto;
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain, cover;
   }
 }

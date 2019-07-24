@@ -1,9 +1,13 @@
 .features {
+  margin-bottom: 37px;
+
   background-color: $bg-basic;
 }
 
 .features__item {
-  padding: 20px;
+  text-align: left;
+  padding-top: 32px;
+  padding-left: 70px;
 }
 
 .features__title {
@@ -11,6 +15,10 @@
 }
 
 .features__text {
+  width: 220px;
+  margin-top: 12px;
+
+
   color: $text-main;
   line-height: 21px;
 }

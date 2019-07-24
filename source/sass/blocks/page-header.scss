@@ -6,8 +6,13 @@
   background-color: $bg-basic;
 }
 
-@media (min-width: $tablet-width),
-  (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .page-header {
     margin-bottom: 0;
   }

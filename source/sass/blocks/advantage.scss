@@ -1,5 +1,7 @@
 .advantage {
 
+  min-height: 108px;
+
   color: $text-main;
   background-color: $bg-secondary;
 
@@ -15,14 +17,30 @@
   line-height: 26px;
 }
 
-.advantage__number,
-.advantage__text {
-  color: $text-main;
+.advantage__number {
   line-height: 21px;
 }
 
-.advantage__wrapper {
-  padding: 40px;
+.advantage__text {
+  line-height: 21px;
+
+  &--bordered {
+    border-bottom: 2px solid $gray-light;
+  }
+}
+
+.advantage__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &--city {
+    height: 469px;
+  }
+
+  &--bridge {
+    height: 451px;
+  }
 }
 
 .advantage__features-list {

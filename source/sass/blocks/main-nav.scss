@@ -72,6 +72,10 @@
     background-color: $white;
   }
 
+  .main-nav__item {
+    border-top: none;
+  }
+
   .main-nav__link {
     padding-top: 12px;
     padding-bottom: 16px;

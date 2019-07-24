@@ -1,14 +1,33 @@
+.advantages {
+  width: 100%;
+}
+
 .advantages__intro {
+  width: 255px;
+  margin: 0 auto;
+
   color: $text-main;
   line-height: 26px;
 }
 
 .advantages__list {
+  width: 320px;
+  margin: 0 auto;
   @include list-style;
-  margin-top: 47px;
+  margin-top: 25px;
 }
 
 .advantages__item {
   margin: 0;
   padding: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__intro {
+    width: 490px;
+  }
+
+  .advantages__list {
+    margin-top: 52px;
+  }
 }
