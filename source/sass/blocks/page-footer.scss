@@ -1,0 +1,20 @@
+.page-footer {
+  margin-top: 31px;
+  text-align: center;
+}
+
+.page-footer__tag {
+  color: $text-dark;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.page-footer__social {
+  margin: 70px;
+}
+
+.page-footer__copyright {
+  color: $text-main;
+  line-height: 26px;
+}

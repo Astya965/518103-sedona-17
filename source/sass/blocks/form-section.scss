@@ -1,0 +1,38 @@
+.form-section__legend {
+  line-height: 26px;
+}
+
+.form-section__label {
+  color: $text-main;
+  line-height: 26px;
+}
+
+.form-section__label-radio,
+.form-section__label-check {
+  line-height: 26px;
+}
+
+.form-section__input,
+.form-section__textarea {
+  background-color: $bg-input;
+  border: none;
+
+  &:hover {
+    background-color: $bg-input--hover;
+  }
+
+  &:active {
+    background-color: $bg-input--active;
+    border: 4px solid $border-input--active;
+  }
+}
+
+.form-section__input::placeholder,
+.form-section__textarea::placeholder {
+  font-family: $ptsans;
+  font-size: 18px;
+  font-weight: 700;
+  color: $text-dark;
+  line-height: 26px;
+  text-transform: none;
+}
