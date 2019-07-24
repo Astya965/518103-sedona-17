@@ -1,4 +1,7 @@
 .booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 290px;
   margin: 0 auto;
 }
@@ -24,4 +27,30 @@
 
 .booking__btn {
   margin-top: 41px;
+}
+
+@media (min-width: $tablet-width) {
+  .booking__title {
+    font-size: 30px;
+  }
+
+  .booking__text {
+    width: 434px;
+  }
+
+  .booking__btn {
+    width: 367px;
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .booking {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .booking__btn {
+    margin-top: 65px;
+  }
 }
