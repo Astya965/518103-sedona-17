@@ -23,11 +23,18 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .advantages__intro {
     width: 490px;
   }
 
   .advantages__list {
+    width: 100%;
     margin-top: 52px;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+    min-height: 260px;
   }
 }

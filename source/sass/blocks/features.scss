@@ -22,3 +22,10 @@
   color: $text-main;
   line-height: 21px;
 }
+
+@media (min-width: $tablet-width) {
+  .features__item {
+    min-height: 290px;
+    padding: 0;
+  }
+}

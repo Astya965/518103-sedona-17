@@ -47,3 +47,23 @@
   @include list-style;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .advantage__main {
+    flex-direction: row;
+    height: 256px;
+
+    &--bridge {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .advantage__features-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .advantage__text--bordered {
+    border-bottom: none;
+  }
+}
