@@ -11,9 +11,9 @@
 }
 
 .advantages__list {
+  @include list-style;
   width: 320px;
   margin: 0 auto;
-  @include list-style;
   margin-top: 25px;
 }
 
