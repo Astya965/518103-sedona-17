@@ -1,6 +1,14 @@
 .page-header {
   margin: 0 auto;
+  margin-bottom: 56px;
   padding: 0;
 
   background-color: $bg-basic;
+}
+
+@media (min-width: $tablet-width),
+  (min-width: $desktop-width) {
+  .page-header {
+    margin-bottom: 0;
+  }
 }
