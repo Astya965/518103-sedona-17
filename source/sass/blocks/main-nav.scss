@@ -11,6 +11,8 @@
 .main-nav__list {
   @include list-style;
 
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
