@@ -16,10 +16,28 @@
   margin: 0 auto;
 }
 
+.page-main__gallery {
+  margin-top: 32px;
+}
+
+.page-main__video {
+  margin-top: 50px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__booking {
     padding-top: 55px;
     padding-bottom: 57px;
+  }
+
+  .page-main__gallery {
+      width: 648px;
+      margin: 0 auto;
+      margin-top: 68px;
+  }
+
+  .page-main__video {
+    margin-top: 67px;
   }
 }
 

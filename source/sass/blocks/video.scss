@@ -1,0 +1,23 @@
+@media (min-width: $tablet-width) {
+    .video__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $text-dark;
+  }
+
+  .video__text {
+    line-height: 24px;
+  }
+
+  .video__promo {
+    width: 415px;
+    margin: 0 auto;
+  }
+
+  .video__player {
+    margin: 0 auto;
+    margin-top: 74px;
+    margin-bottom: 47px;
+  }
+}

@@ -1,3 +1,25 @@
 .gallery__list {
   @include list-style;
 }
+
+.gallery__item {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .gallery__list:first-child {
+    flex-grow: 2;
+  }
+
+  .gallery__item {
+    padding-top: 0;
+  }
+}
