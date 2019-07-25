@@ -1,5 +1,6 @@
 // Навигация
 
+//Размер вьюпорта
 //Шрифты
 //Основные цвета
 //Цвет фона
@@ -8,7 +9,11 @@
 //Цвет ссылок
 // Цвет фона ссылок
 // Цвет фона кнопок
+// Цвет полей формы
 
+//Размер вьюпорта
+$tablet-width: 768px;
+$desktop-width: 1200px;
 
 //Шрифты
 $ptsans: "PT Sans", "Arial", sans-serif;
@@ -18,12 +23,14 @@ $white: hsl(0, 0%, 100%);
 $blue: hsl(203, 47%, 66%);
 $blue--hover: hsl(203, 42%, 58%);
 $blue--active: hsl(202, 44%, 54%);
+$gray: hsl(0, 0%, 95%);
+$gray-light: hsl(0, 0%, 90%);
 
 
 //Цвет фона
 $bg-basic: $white;
 $bg-main: $blue;
-$bg-secondary: hsl(0, 0%, 95%);
+$bg-secondary: $gray;
 $bg-features: hsl(0, 0%, 93%);
 $bg-map: hsl(40, 20%, 94%);
 
@@ -53,4 +60,10 @@ $bg-link-main--active: $blue--active;
 $btn-main: $blue;
 $btn--hover: $blue--hover;
 $btn--active: $blue--active;
-$btn--disabled: hsl(0, 0%, 90%);
+$btn--disabled: $gray-light;
+
+// Цвет полей формы
+$bg-input: $gray;
+$bg-input--hover: $gray-light;
+$bg-input--active: $white;
+$border-input--active: $gray-light;

@@ -1,7 +1,14 @@
 .title {
+  margin: 0;
+  padding: 0;
+
   font-family: $ptsans;
   font-size: 18px;
   font-weight: 700;
   color: $text-dark;
   text-transform: uppercase;
+
+  &--white {
+    color: $text-light;
+  }
 }

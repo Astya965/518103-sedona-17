@@ -1,19 +1,23 @@
-.photo__link {
-  padding: 20px;
-}
-
 .photo__info {
+  margin-left: 20px;
+
   font-size: 14px;
   line-height: 24px;
   text-align: left;
 }
 
 .photo__title {
+  margin: 0;
+  padding: 0;
+
   font-weight: 700;
   color: $text-dark;
 }
 
 .photo__autor {
+  margin: 0;
+  padding: 0;
+
   font-weight: 400;
   color: $text-main;
   text-transform: none;
@@ -21,5 +25,45 @@
 
 .photo__like {
   margin-top: 20px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
+}
+
+.photo__image {
+  vertical-align: bottom;
+}
+
+@media (min-width: $tablet-width) {
+  .photo {
+    flex-shrink: 0;
+
+    background-color: $bg-secondary;
+  }
+
+  .photo__info {
+    margin-left: 0;
+
+    height: 76px;
+  }
+
+  .photo__like {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo {
+    position: relative;
+  }
+
+  .photo__image {
+    width: 100%;
+  }
+
+  .photo__info {
+    z-index: 10;
+    position: absolute;
+
+    top: 0;
+  }
 }

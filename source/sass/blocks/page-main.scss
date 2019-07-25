@@ -2,20 +2,65 @@
   text-align: center;
 }
 
-.page-main__intro {
-  margin-top: 56px;
-}
-
 .page-main__advantages {
-  padding-top: 30px;
+  padding-top: 29px;
 }
 
 .page-main__booking {
-  padding-top: 33px;
+  padding-top: 28px;
+  padding-bottom: 50px;
 }
 
 .page-main__map {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 10px;
+}
+
+.page-main__gallery {
+  margin-top: 29px;
+}
+
+.page-main__video {
+  margin-top: 30px;
+  margin-bottom: 75px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__booking {
+    padding-top: 55px;
+    padding-bottom: 57px;
+  }
+
+  .page-main__map {
+    margin-bottom: 3px;
+  }
+
+  .page-main__gallery {
+    width: 648px;
+    margin: 0 auto;
+    margin-top: 68px;
+  }
+
+  .page-main__video {
+    margin-top: 66px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__booking {
+    padding-top: 52px;
+    padding-bottom: 57px;
+  }
+
+  .page-main__gallery {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+  .page-main__video {
+    margin-top: 70px;
+    margin-bottom: 88px;
+  }
 }

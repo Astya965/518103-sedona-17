@@ -1,0 +1,16 @@
+.player {
+  margin-top: 35px;
+
+  height: 267px;
+  background-color: $bg-secondary;
+}
+
+@media (min-width: $tablet-width) {
+  width: 648px;
+  height: 499px;
+}
+
+@media (min-width: $desktop-width) {
+  width: 648px;
+  height: 499px;
+}
