@@ -24,24 +24,46 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    width: 768px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-top: 0;
   }
 
   .page-footer__tag {
     margin-top: 40px;
-    margin-left: 31px;
+    margin-left: 60px;
   }
 
   .page-footer__social {
-    margin-top: 30px;
-    margin-left: 6px;
+    margin-top: 31px;
+    margin-left: 31px;
   }
 
   .page-footer__copyright {
     margin-top: 40px;
-    margin-right: 55px;
+    margin-left: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1200px;
+  }
+
+  .page-footer__tag {
+    margin-top: 42px;
+    margin-left: 119px;
+  }
+
+  .page-footer__social {
+    margin-top: 31px;
+    margin-left: 187px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 40px;
+    margin-left: 190px;
   }
 }
