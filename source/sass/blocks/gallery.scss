@@ -3,8 +3,11 @@
 }
 
 .gallery__item {
-  padding-top: 20px;
+  padding-top: 22px;
   padding-bottom: 0;
+
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,6 +16,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-content: flex-start;
   }
 
   .gallery__list:first-child {
@@ -21,5 +25,13 @@
 
   .gallery__item {
     padding-top: 0;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__item {
+    flex-grow: 1;
   }
 }

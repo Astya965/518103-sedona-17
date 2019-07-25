@@ -28,10 +28,15 @@
   margin-bottom: 20px;
 }
 
+.photo__image {
+  vertical-align: bottom;
+}
+
 @media (min-width: $tablet-width) {
   .photo {
-    background-color: $bg-secondary;
     flex-shrink: 0;
+
+    background-color: $bg-secondary;
   }
 
   .photo__info {
@@ -43,5 +48,22 @@
   .photo__like {
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo {
+    position: relative;
+  }
+
+  .photo__image {
+    width: 100%;
+  }
+
+  .photo__info {
+    z-index: 10;
+    position: absolute;
+
+    top: 0;
   }
 }
