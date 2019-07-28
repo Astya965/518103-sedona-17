@@ -12,6 +12,7 @@
 // Цвет полей формы
 
 //Размер вьюпорта
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 
@@ -26,7 +27,6 @@ $blue--active: hsl(202, 44%, 54%);
 $gray: hsl(0, 0%, 95%);
 $gray-light: hsl(0, 0%, 90%);
 
-
 //Цвет фона
 $bg-basic: $white;
 $bg-main: $blue;
@@ -35,7 +35,8 @@ $bg-features: hsl(0, 0%, 93%);
 $bg-map: hsl(40, 20%, 94%);
 
 //Цвет границ
-$border-color: hsl(203, 27%, 53%);
+$border-dark: hsl(203, 27%, 53%);
+$border-light: hsl(203, 47%, 73%);
 
 //Цвет текста
 $text-main: hsl(0, 0%, 20%);
@@ -46,10 +47,14 @@ $text-opacity: hsla(0, 0%, 100%, 0.3);
 //Цвет ссылок
 
 $link-main: $white;
+$link-dark: $text-dark;
+$link-dark--hover: hsl(203, 47%, 66%);
+$link-dark--active: hsla(0, 0%, 0%, 0.3);
+$active-link-dark: hsl(23, 15%, 40%);
+$active-link-dark--hover: hsl(23, 18%, 32%);
+$active-link-dark--active: hsla(23, 15%, 40%, 0.3);
 
-//Здесь должныб ыть дектопный вариант ссылок в меню
-
-// Цвет фона ссылок
+// Цвет фона и границ ссылок
 
 $bg-link-main: $blue;
 $bg-link-main--hover: $blue--hover;
