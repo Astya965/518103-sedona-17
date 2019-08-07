@@ -1,4 +1,6 @@
 .advantage {
+  padding-top: 26px;
+
   color: $text-main;
   background-color: $bg-secondary;
 
@@ -26,18 +28,26 @@
 
 .advantage__number {
   display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 9px;
+  margin-bottom: 14px;
 
   line-height: 21px;
 }
 
 .advantage__text {
+  width: 258px;
+  margin: 0 auto;
+  padding-bottom: 28px;
+
   line-height: 21px;
 
   &--bordered {
     border-bottom: 2px solid $gray-light;
   }
+}
+
+.advantage--main .advantage__text {
+  width: 265px;
 }
 
 .advantage__main {
