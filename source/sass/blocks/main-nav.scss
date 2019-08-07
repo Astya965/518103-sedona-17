@@ -149,6 +149,8 @@
   .main-nav__item {
     box-sizing: border-box;
     width: 153px;
+    padding-top: 3px;
+    padding-bottom: 2px;
 
     text-align: left;
     vertical-align: center;
@@ -170,6 +172,22 @@
   .main-nav__item:nth-child(4n + 3),
   .main-nav__item:nth-child(4n) {
     text-align: right;
+  }
+
+  .main-nav__item:nth-child(4n + 1) {
+    padding-left: 49px;
+  }
+
+  .main-nav__item:nth-child(4n + 2) {
+    padding-left: 30px;
+  }
+
+  .main-nav__item:nth-child(4n + 3) {
+    padding-right: 20px;
+  }
+
+  .main-nav__item:nth-child(4n) {
+    padding-right: 24px;
   }
 
   .main-nav__link {
@@ -213,5 +231,30 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 1200px;
+  }
+
+  .main-nav__item {
+    width: 240px;
+  }
+
+  .main-nav__item:nth-child(4n + 2),
+  .main-nav__item:nth-child(4n + 3) {
+    width: 360px;
+  }
+
+  .main-nav__item:nth-child(4n + 1) {
+    padding-left: 91px;
+  }
+
+  .main-nav__item:nth-child(4n + 2) {
+    padding-left: 70px;
+  }
+
+  .main-nav__item:nth-child(4n + 3) {
+    padding-right: 67px;
+  }
+
+  .main-nav__item:nth-child(4n) {
+    padding-right: 70px;
   }
 }
