@@ -1,7 +1,4 @@
 .advantage {
-
-  min-height: 108px;
-
   color: $text-main;
   background-color: $bg-secondary;
 
@@ -13,11 +10,25 @@
   }
 }
 
+.advantage__wrapper {
+  width: 265px;
+  margin: 0 auto;
+  padding-top: 39px;
+
+  &--triangle {
+    padding-top: 55px;
+  }
+}
+
 .advantage__title {
   line-height: 26px;
 }
 
 .advantage__number {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 15px;
+
   line-height: 21px;
 }
 

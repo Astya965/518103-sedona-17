@@ -3,11 +3,27 @@
 }
 
 .advantages__intro {
+  position: relative;
+
   width: 255px;
   margin: 0 auto;
 
   color: $text-main;
   line-height: 26px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: -32px;
+    bottom: -43px;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 19px 160px 0 160px;
+    border-color: $bg-basic transparent transparent transparent;
+  }
 }
 
 .advantages__list {
