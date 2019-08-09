@@ -141,7 +141,7 @@
 
   .advantage__wrapper {
     width: 256px;
-    padding: 45px;
+    padding-top: 45px;
   }
 
   .advantage__title {
@@ -182,5 +182,31 @@
   .advantage__features-list {
     display: flex;
     justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage__image {
+    width: 800px;
+  }
+
+  .advantage__wrapper {
+    padding-top: 51px;
+  }
+
+  .advantage__text {
+    width: 285px;
+    margin-top: 5px;
+    padding-bottom: 66px;
+  }
+
+  .advantage__main--city .advantage__text {
+    width: 264px;
+    margin-left: -4px;
+  }
+
+  .advantage__main--bridge .advantage__text {
+    width: 234px;
+    margin-left: 11px;
   }
 }

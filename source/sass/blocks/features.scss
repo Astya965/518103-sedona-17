@@ -88,6 +88,10 @@
   line-height: 21px;
 }
 
+.features__text br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .features__item {
     padding: 0;
@@ -138,5 +142,37 @@
 
   .features__item--gifts .features__text {
     width: 162px;
+  }
+
+  .features__text br {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item {
+    padding-bottom: 47px;
+
+    &--house::before {
+      left: 104px;
+    }
+
+    &--gifts::before {
+      left: 110px;
+    }
+
+    &--food::before {
+      left: 104px;
+    }
+  }
+
+  .features__text,
+  .features__item--gifts .features__text {
+    width: 285px;
+    margin-top: 21px;
+  }
+
+  .features__text br {
+    display: inline;
   }
 }
