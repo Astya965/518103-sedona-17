@@ -26,32 +26,13 @@
 }
 
 .photo__like {
-  position: relative;
-
   margin-top: 8px;
   margin-left: 28px;
   margin-bottom: 17px;
 
   &::before {
-    content: "";
-
-    z-index: 2;
-    position: absolute;
     top: -1px;
     left: -28px;
-
-    display: block;
-    width: 23px;
-    height: 21px;
-
-    background-color: transparent;
-    background-image: url("../../img/icon-like.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    border: none;
-
-    opacity: 0.3;
   }
 }
 
@@ -112,7 +93,26 @@
   .photo__info {
     z-index: 10;
     position: absolute;
+    bottom: 0;
+    left: -20px;
 
-    top: 0;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo__title,
+  .photo__autor {
+    margin-left: 22px;
+
+    color: $text-light;
+  }
+
+  .photo__like {
+    margin-left: 137px;
+  }
+
+  .gallery__item:first-child .photo__like {
+    margin-left: 937px;
   }
 }

@@ -79,8 +79,40 @@
 
 @media (min-width: $desktop-width) {
   .player__screen {
-    width: 648px;
-    height: 499px;
+    width: 800px;
+    height: 500px;
     margin: 0 auto;
+  }
+
+  .player__controls {
+    position: absolute;
+    bottom: 1px;
+    left: 200px;
+
+    width: 800px;
+    min-height: 93px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .player__bar {
+    width: 540px;
+  }
+
+  .player__bar-slider {
+    top: -3px;
+    left: 113px;
+  }
+
+  .player__btn {
+    &--subtitles {
+      top: -9px;
+      right: 86px;
+    }
+
+    &--fullscreen {
+      top: -9px;
+      right: 35px;
+    }
   }
 }
