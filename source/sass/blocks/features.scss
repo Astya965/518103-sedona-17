@@ -90,7 +90,53 @@
 
 @media (min-width: $tablet-width) {
   .features__item {
-    min-height: 290px;
     padding: 0;
+  }
+
+  .features__item {
+    text-align: center;
+    padding-top: 153px;
+    padding-bottom: 25px;
+
+    &--house::before {
+      top: 55px;
+      left: 42px;
+
+      width: 75px;
+      height: 72px;
+    }
+
+    &--gifts::before {
+      top: 52px;
+      left: 49px;
+
+      width: 64px;
+      height: 75px;
+    }
+
+    &--food::before {
+      top: 57px;
+      left: 42px;
+
+      width: 77px;
+      height: 68px;
+    }
+  }
+
+  .features__item--gifts {
+    order: 1;
+  }
+
+  .features__title {
+    font-size: 21px;
+  }
+
+  .features__text {
+    width: 158px;
+    margin-top: 21px;
+  }
+
+  .features__item--gifts .features__text {
+    width: 162px;
   }
 }
