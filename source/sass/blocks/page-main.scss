@@ -22,7 +22,7 @@
 
 .page-main__video {
   margin-top: 32px;
-  margin-bottom: 74px;
+  margin-bottom: 136px;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,7 +36,7 @@
   }
 
   .page-main__map {
-    margin-bottom: 3px;
+    margin-bottom: 11px;
   }
 
   .page-main__gallery {
@@ -55,6 +55,10 @@
   .page-main__booking {
     padding-top: 55px;
     padding-bottom: 63px;
+  }
+
+  .page-main__map {
+    margin-bottom: 2px;
   }
 
   .page-main__gallery {
