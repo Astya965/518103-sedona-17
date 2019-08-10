@@ -26,6 +26,7 @@ $blue--hover: hsl(203, 42%, 58%);
 $blue--active: hsl(202, 44%, 54%);
 $gray: hsl(0, 0%, 95%);
 $gray-light: hsl(0, 0%, 90%);
+$black: hsl(0, 0%, 0%);
 
 //Цвет фона
 $bg-basic: $white;
@@ -41,13 +42,13 @@ $border-light: hsl(203, 47%, 73%);
 //Цвет текста
 $text-main: hsl(0, 0%, 20%);
 $text-light: $white;
-$text-dark: hsl(0, 0%, 0%);
+$text-dark: $black;
 $text-opacity: hsla(0, 0%, 100%, 0.3);
 
 //Цвет ссылок
 
 $link-main: $white;
-$link-dark: $text-dark;
+$link-dark: $black;
 $link-dark--hover: hsl(203, 47%, 66%);
 $link-dark--active: hsla(0, 0%, 0%, 0.3);
 $active-link-dark: hsl(23, 15%, 40%);
@@ -72,3 +73,5 @@ $bg-input: $gray;
 $bg-input--hover: $gray-light;
 $bg-input--active: $white;
 $border-input--active: $gray-light;
+$bg-icon: $gray-light;
+$bg-icon--checked: $black;
