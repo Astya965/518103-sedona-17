@@ -1,6 +1,8 @@
 .like {
   position: relative;
 
+  cursor: pointer;
+
   &::before {
     content: "";
 
@@ -25,6 +27,8 @@
 .like__button {
   background-color: inherit;
   border: none;
+
+  cursor: pointer;
 }
 
 .like__value {
