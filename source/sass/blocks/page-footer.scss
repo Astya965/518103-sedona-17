@@ -1,7 +1,7 @@
 .page-footer {
   margin: 0 auto;
-  margin-top: 31px;
-  margin-bottom: 31px;
+  margin-top: 29px;
+  padding-bottom: 31px;
 
   text-align: center;
 }
@@ -15,12 +15,13 @@
 
 .page-footer__social {
   min-width: 320px;
-  margin-top: 36px;
+  margin-top: 38px;
+  margin-left: 3px;
 }
 
 .page-footer__copyright {
   color: $text-main;
-  margin-top: 42px;
+  margin-top: 40px;
   line-height: 26px;
 }
 
@@ -34,17 +35,17 @@
   }
 
   .page-footer__tag {
-    margin-top: 40px;
+    margin-top: 29px;
     margin-left: 60px;
   }
 
   .page-footer__social {
-    margin-top: 31px;
+    margin-top: 21px;
     margin-left: 31px;
   }
 
   .page-footer__copyright {
-    margin-top: 40px;
+    margin-top: 29px;
     margin-left: 32px;
   }
 }

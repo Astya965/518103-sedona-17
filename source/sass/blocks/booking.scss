@@ -22,11 +22,15 @@
   padding: 0;
 
   color: $text-main;
-  line-height: 21px;
+  line-height: 24px;
+}
+
+.booking__text br {
+  display: none;
 }
 
 .booking__btn {
-  margin-top: 41px;
+  margin-top: 36px;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,12 +39,17 @@
   }
 
   .booking__text {
-    width: 434px;
+    width: 438px;
+    margin-top: 31px;
+  }
+
+  .booking__text br {
+    display: inline;
   }
 
   .booking__btn {
-    width: 367px;
-    margin-top: 55px;
+    width: 363px;
+    margin-top: 42px;
   }
 }
 
@@ -51,6 +60,6 @@
   }
 
   .booking__btn {
-    margin-top: 65px;
+    margin-top: 47px;
   }
 }

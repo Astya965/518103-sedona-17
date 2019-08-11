@@ -10,10 +10,10 @@
     <div class="container">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="http://placehold.it/102x84" width="102" height="84" alt="Логотип - сайта Седона">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип - сайта Седона">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+        <nav class="page-header__nav main-nav main-nav--opened">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Переключить меню</span>
           </button>
           <ul class="main-nav__list">
@@ -35,57 +35,85 @@
       <main class="page-main">
         <header class="page-main__intro intro">
           <div class="intro__wrapper">
-            <img class="intro__img" src="http://placehold.it/460x80" width="460" height="80" alt="Sedona">
+            <img class="intro__img" src="img/text-sedona.svg" width="460" height="80" alt="Sedona">
           </div>
-          <h1 class="intro__title">Оставьте свой отзыв</h1>
+          <h1 class="intro__title title">Оставьте свой отзыв</h1>
           <p class="intro__text text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
-        <form class="feedback" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="feedback__section form-section">
+        <form class="page-main__feedback feedback" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="feedback__section form-section form-section--name">
             <legend class="form-section__legend title">Представьтесь:</legend>
-            <div class="form-section__wrapper">
-              <label class="form-section__label text" for="first-name">Имя<sup>*</sup>:</label>
+            <div class="form-section__row">
+              <label class="form-section__label form-section__label--name text" for="first-name">Имя<sup>*</sup>:</label>
               <input class="form-section__input" id="first-name" type="text" name="first-name" placeholder="Петр" required>
             </div>
-            <div class="form-section__wrapper">
+            <div class="form-section__row">
               <label class="form-section__label text" for="second-name">Фамилия<sup>*</sup>:</label>
               <input class="form-section__input" id="second-name" type="text" name="second-name" placeholder="Иванов" required>
-              </div>
-            <div class="form-section__wrapper">
+            </div>
+            <div class="form-section__row">
               <label class="form-section__label text" for="third-name">Отчество:</label>
               <input class="form-section__input" id="third-name" type="text" name="third-name" placeholder="Александрович">
-              </div>
+            </div>
           </fieldset>
-          <fieldset class="feedback__fieldset form-section">
+          <fieldset class="feedback__section form-section form-section--contact">
             <legend class="form-section__legend title">Контактная информация:</legend>
-            <label class="form-section__label text" for="tel">Контактный телефон<sup>*</sup>:</label>
-            <input class="form-section__input form-section__input--tel" id="tel" type="tel" name="tel" pattern="[+][7][0-9]{10}" placeholder="Введите телефон" required>
-            <label class="form-section__label text" for="email">Электронная почта<sup>*</sup>:</label>
-            <input class="form-section__input form-section__input--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+              <ul class="form-section__list">
+                <li class="form-section__row">
+                  <label class="form-section__label text" for="tel">Контактный телефон<sup>*</sup>:</label>
+                  <div class="form-section__input-wrapper form-section__input-wrapper--tel">
+                    <input class="form-section__input" id="tel" type="tel" name="tel" pattern="[+][7][0-9]{10}" placeholder="Введите телефон" required>
+                  </div>
+                </li>
+                <li class="form-section__row">
+                  <label class="form-section__label text" for="email">Электронная почта<sup>*</sup>:</label>
+                  <div class="form-section__input-wrapper form-section__input-wrapper--email">
+                    <input class="form-section__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                  </div>
+                </li>
+              </ul>
           </fieldset>
-          <fieldset class="feedback__fieldset form-section">
+          <fieldset class="feedback__section form-section form-section--impress">
             <legend class="form-section__legend title">Ваше общее впечатление:</legend>
-            <input class="form-section__input-radio" id="good" type="radio" name="impression" value="good" checked>
-            <label class="form-section__label-radio title" for="good">Скорее положительное</label>
-            <input class="form-section__input-radio" id="bad" type="radio" name="impression" value="bad">
-            <label class="form-section__label-radio title" for="bad">Скорее отрицательное</label>
-            <input class="form-section__input-radio" id="other" type="radio" name="impression" value="other">
-            <label class="form-section__label-radio title" for="other">Затрудняюсь ответить</label>
+            <ul class="form-section__list">
+              <li class="form-section__option">
+                <input class="form-section__input visually-hidden" id="good" type="radio" name="impression" value="good" checked>
+                <label class="form-section__label form-section__label--radio" for="good">Скорее положительное</label>
+              </li>
+              <li class="form-section__option">
+                <input class="form-section__input visually-hidden" id="bad" type="radio" name="impression" value="bad">
+                <label class="form-section__label form-section__label--radio" for="bad">Скорее отрицательное</label>
+              </li>
+              <li class="form-section__option">
+                <input class="form-section__input visually-hidden" id="other" type="radio" name="impression" value="other">
+                <label class="form-section__label form-section__label--radio" for="other">Затрудняюсь ответить</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="feedback__fieldset form-section">
+          <fieldset class="feedback__section form-section form-section--sight">
             <legend class="form-section__legend title">Посещенные достопримечательности:</legend>
-            <input class="form-section__input-check" id="bridge" type="checkbox" name="sight" value="bridge" checked>
-            <label class="form-section__label-check title" for="bridge">Мост Дьявола</label>
-            <input class="form-section__input-check" id="mountain" type="checkbox" name="sight" value="mountain" checked>
-            <label class="form-section__label-check title" for="mountain">Гора-Колокол</label>
-            <input class="form-section__input-check" id="park" type="checkbox" name="sight" value="park" checked>
-            <label class="form-section__label-check title" for="park">Слайд-парк</label>
-            <input class="form-section__input-check" id="rocks" type="checkbox" name="sight" value="rocks">
-            <label class="form-section__label-check title" for="rocks">Красные скалы</label>
+            <ul class="form-section__list">
+              <li class="form-section__option">
+                <input class="form-section__input visually-hidden" id="bridge" type="checkbox" name="sight" value="bridge" checked>
+                <label class="form-section__label form-section__label--check" for="bridge">Мост Дьявола</label>
+              </li>
+              <li class="form-section__option">
+                <input class="form-section__input visually-hidden" id="mountain" type="checkbox" name="sight" value="mountain" checked>
+                <label class="form-section__label form-section__label--check" for="mountain">Гора-Колокол</label>
+              </li>
+              <li class="form-section__option">
+                <input class="form-section__input visually-hidden" id="park" type="checkbox" name="sight" value="park" checked>
+                <label class="form-section__label form-section__label--check" for="park">Слайд-парк</label>
+              </li>
+              <li class="form-section__option">
+                <input class="form-section__input visually-hidden" id="rocks" type="checkbox" name="sight" value="rocks">
+                <label class="form-section__label form-section__label--check" for="rocks">Красные скалы</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="feedback__fieldset form-section">
+          <fieldset class="feedback__section form-section form-section--massege">
             <legend class="form-section__legend title">Опишите свои эмоции:</legend>
-            <textarea class="form-section__textarea" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="form-section__textarea" rows="8" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="feedback__btn btn" type="submit">Отправить отзыв</button>
           <p class="feedback__required visually-hidden">* - обязательные поля</p>
@@ -108,7 +136,7 @@
           <p class="copyright__text text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Академия</span>
-            <img class="copyright__image" src="http://placehold.it/27x34" width="27" height="34" alt="Лого HTML Академии">
+            <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Лого HTML Академии">
           </a>
         </div>
       </footer>
@@ -125,5 +153,6 @@
         <button class="modal__button button">Закрыть окно</button>
       </div>
     </section>
+    <script src="js/main-nav__toggle.js"></script>
   </body>
 </html>

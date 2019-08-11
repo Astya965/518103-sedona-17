@@ -1,19 +1,39 @@
 .page-header {
+  position: relative;
+
   margin: 0 auto;
-  margin-bottom: 56px;
   padding: 0;
+  padding-bottom: 56px;
 
   background-color: $bg-basic;
 }
 
+.page-header__logo {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  display: block;
+  width: 140px;
+  height: 56px;
+  margin-left: -70px;
+
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
-    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .page-header__logo {
+    top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }

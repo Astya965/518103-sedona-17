@@ -1,5 +1,6 @@
 .photo__info {
-  margin-left: 20px;
+  width: 280px;
+  margin: 0 auto;
 
   font-size: 14px;
   line-height: 24px;
@@ -8,8 +9,10 @@
 
 .photo__title {
   margin: 0;
+  margin-top: 14px;
   padding: 0;
 
+  font-size: 14px;
   font-weight: 700;
   color: $text-dark;
 }
@@ -24,8 +27,14 @@
 }
 
 .photo__like {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-left: 28px;
+  margin-bottom: 17px;
+
+  &::before {
+    top: -1px;
+    left: -28px;
+  }
 }
 
 .photo__image {
@@ -40,14 +49,36 @@
   }
 
   .photo__info {
-    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    margin-top: 1px;
+    margin-left: 20px;
+    margin-bottom: 3px;
 
     height: 76px;
   }
 
+  .photo__title,
+  .photo__autor {
+    width: 180px;
+  }
+
   .photo__like {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    margin-top: 27px;
+    margin-left: 62px;
+
+    &::before {
+      top: 0;
+      left: -24px;
+    }
+  }
+
+  .gallery__item:first-child .photo__like {
+    margin-left: 387px;
   }
 }
 
@@ -63,7 +94,26 @@
   .photo__info {
     z-index: 10;
     position: absolute;
+    bottom: 0;
+    left: -20px;
 
-    top: 0;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo__title,
+  .photo__autor {
+    margin-left: 22px;
+
+    color: $text-light;
+  }
+
+  .photo__like {
+    margin-left: 137px;
+  }
+
+  .gallery__item:first-child .photo__like {
+    margin-left: 937px;
   }
 }

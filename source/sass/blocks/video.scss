@@ -14,10 +14,13 @@
 .video__promo {
   width: 240px;
   margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
   .video__title {
+    margin-bottom: 31px;
+
     font-size: 30px;
   }
 
@@ -27,11 +30,6 @@
 
   .video__promo {
     width: 415px;
-  }
-
-  .video__player {
-    margin: 0 auto;
-    margin-top: 74px;
-    margin-bottom: 47px;
+    margin-bottom: 73px;
   }
 }

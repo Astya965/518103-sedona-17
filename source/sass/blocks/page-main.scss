@@ -7,7 +7,7 @@
 }
 
 .page-main__booking {
-  padding-top: 28px;
+  padding-top: 26px;
   padding-bottom: 50px;
 }
 
@@ -21,18 +21,27 @@
 }
 
 .page-main__video {
-  margin-top: 30px;
-  margin-bottom: 75px;
+  margin-top: 32px;
+  margin-bottom: 136px;
+}
+
+.page-main__feedback {
+  margin-top: 19px;
+  margin-bottom: 71px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__advantages {
+    padding-top: 29px;
+  }
+
   .page-main__booking {
     padding-top: 55px;
     padding-bottom: 57px;
   }
 
   .page-main__map {
-    margin-bottom: 3px;
+    margin-bottom: 11px;
   }
 
   .page-main__gallery {
@@ -43,20 +52,24 @@
 
   .page-main__video {
     margin-top: 66px;
-    margin-bottom: 0;
+    margin-bottom: 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__booking {
-    padding-top: 52px;
-    padding-bottom: 57px;
+    padding-top: 55px;
+    padding-bottom: 63px;
+  }
+
+  .page-main__map {
+    margin-bottom: 2px;
   }
 
   .page-main__gallery {
     width: 1200px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 71px;
   }
 
   .page-main__video {

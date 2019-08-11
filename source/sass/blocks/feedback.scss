@@ -1,0 +1,21 @@
+.feedback {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-top: 1px solid $gray;
+}
+
+.feedback__section {
+  border: none;
+  margin: 0;
+  margin-top: 16px;
+  border-bottom: 1px solid $gray;
+}
+
+.feedback__btn {
+  width: 287px;
+  margin: 0 auto;
+  margin-top: 38px;
+
+  text-transform: uppercase;
+}
