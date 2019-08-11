@@ -120,6 +120,10 @@
   padding: 0;
 }
 
+.advantage__image {
+  vertical-align: bottom;
+}
+
 @media (min-width: $tablet-width) {
   .advantage {
     flex-grow: 1;
@@ -186,8 +190,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantage__image-wrapper {
+    width: 800px;
+    height: 256px;
+    overflow: hidden;
+  }
+
   .advantage__image {
     width: 800px;
+    height: 400px;
+    margin-top: -68px;
   }
 
   .advantage__wrapper {
