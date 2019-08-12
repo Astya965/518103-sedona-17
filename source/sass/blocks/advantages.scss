@@ -21,7 +21,7 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 19px 160px 0 160px;
+    border-width: 17px 160px 0 160px;
     border-color: $bg-basic transparent transparent transparent;
   }
 }
@@ -30,7 +30,7 @@
   @include list-style;
   width: 320px;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 26px;
 }
 
 .advantages__item {

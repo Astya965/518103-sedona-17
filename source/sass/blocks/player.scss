@@ -41,6 +41,8 @@
 
   background-color: $bg-basic;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .player__btn {
@@ -49,6 +51,7 @@
   background-color: transparent;
 
   border: none;
+  cursor: pointer;
 
   &--replay {
     top: 45px;
