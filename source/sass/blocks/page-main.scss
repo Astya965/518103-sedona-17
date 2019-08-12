@@ -54,6 +54,11 @@
     margin-top: 66px;
     margin-bottom: 52px;
   }
+
+  .page-main__feedback {
+    margin-top: 58px;
+    margin-bottom: 75px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -76,5 +81,10 @@
   .page-main__video {
     margin-top: 70px;
     margin-bottom: 88px;
+  }
+
+  .page-main__feedback {
+    margin-top: 44px;
+    margin-bottom: 70px;
   }
 }
