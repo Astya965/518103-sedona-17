@@ -11,3 +11,16 @@
 
   line-height: 26px;
 }
+
+.copyright__image {
+  fill: 000000;
+}
+
+.copyright__image:hover,
+.copyright__image:focus {
+  fill: #81b3d2;
+}
+
+.copyright__image:active {
+  opacity: 0.3;
+}

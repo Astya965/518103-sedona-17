@@ -18,6 +18,10 @@
 
 .player__scroll {
   position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .player__bar {
@@ -26,7 +30,7 @@
   width: 235px;
   height: 3px;
   margin-top: 22px;
-  margin-left: 22px;
+  margin-right: 22px;
 
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -46,7 +50,14 @@
 }
 
 .player__btn {
-  position: absolute;
+  flex-shrink: 0;
+
+  height: 26px;
+  padding-top: 20px;
+  padding-right: 23px;
+  padding-bottom: 20px;
+  padding-left: 8px;
+  margin-top: 23px;
 
   background-color: transparent;
 
@@ -54,23 +65,24 @@
   cursor: pointer;
 
   &--replay {
-    top: 45px;
-    left: 17px;
-  }
-
-  &--subtitles {
-    top: 46px;
-    right: 66px;
-  }
-
-  &--fullscreen {
-    top: 46px;
-    right: 16px;
+    padding-left: 24px;
+    margin-top: 22px;
+    margin-right: auto;
   }
 }
 
 .player__icon {
   fill: #5c6870;
+}
+
+.player__icon:hover,
+.player__icon:focus {
+  fill: #333333;
+}
+
+.player__icon:active {
+  fill: #333333;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -98,17 +110,13 @@
     background-image: none;
   }
 
-  .player__scroll {
-    position: relative;
-  }
-
   .player__bar {
     position: relative;
 
     width: 389px;
     height: 3px;
     margin-top: 45px;
-    margin-left: 93px;
+    margin-right: 34px;
 
     background-color: rgba(255, 255, 255, 0.2);
   }
@@ -125,31 +133,33 @@
     border-radius: 50%;
   }
 
-  .player__btn {
-    position: absolute;
+  .player__scroll {
+    padding-left: 11px;
+    padding-right: 18px;
+  }
 
-    background-color: transparent;
+  .player__btn {
+    margin-top: 17px;
 
     border: none;
 
     &--replay {
-      top: -10px;
-      left: 27px;
-    }
-
-    &--subtitles {
-      top: -9px;
-      right: 84px;
-    }
-
-    &--fullscreen {
-      top: -9px;
-      right: 33px;
+      order: -1;
     }
   }
 
   .player__icon {
     fill: #ffffff;
+  }
+
+  .player__icon:hover,
+  .player__icon:focus {
+    fill: #ffffff;
+    opacity: 0.6;
+  }
+
+  .player__icon:active {
+    opacity: 0.3;
   }
 }
 
@@ -182,17 +192,5 @@
   .player__bar-slider {
     top: -3px;
     left: 113px;
-  }
-
-  .player__btn {
-    &--subtitles {
-      top: -9px;
-      right: 86px;
-    }
-
-    &--fullscreen {
-      top: -9px;
-      right: 35px;
-    }
   }
 }
