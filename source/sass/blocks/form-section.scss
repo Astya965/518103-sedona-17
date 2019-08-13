@@ -132,6 +132,15 @@
   padding-top: 18px;
 }
 
+.review-form__input--error {
+  border: solid 1px red;
+}
+
+.review-form__input--error[type="tel"],
+.review-form__input--error[type="email"] {
+  border-right: solid 4px red;
+}
+
 .form-section__textarea {
   box-sizing: border-box;
   width: 100%;

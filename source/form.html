@@ -147,19 +147,17 @@
         </div>
       </footer>
     </div>
-    <section class="modal visually-hidden">
-      <div class="modal__item modal__item--error">
-        <h3 class="modal__title">Что-то пошло не так!</h3>
-        <p class="modal__text text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button button">Ок</button>
-      </div>
-      <div class="modal__item modal__item--feedback">
-        <h3 class="modal__title">Ваш отзыв отправлен!</h3>
-        <p class="modal__text text">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
-        <button class="modal__button button">Закрыть окно</button>
-      </div>
+    <section class="modal modal--error">
+      <h3 class="modal__title">Что-то пошло не так!</h3>
+      <p class="modal__text text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button modal__button--error btn">Ок</button>
+    </section>
+    <section class="modal modal--success">
+      <h3 class="modal__title">Ваш отзыв отправлен!</h3>
+      <p class="modal__text text">Спасибо за ваше участие, ваш отзыв уже поступил к нам,<br> в ближайшее время мы опубликуем его на сайте.</p>
+      <button class="modal__button modal__button--success btn">Закрыть окно</button>
     </section>
     <script src="js/picturefill.js"></script>
-    <script src="js/main-nav__toggle.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
