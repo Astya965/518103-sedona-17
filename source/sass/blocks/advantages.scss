@@ -37,6 +37,10 @@
   margin: 0;
 }
 
+.advantages__wrapper {
+  @include list-style;
+}
+
 @media (min-width: $tablet-width) {
   .advantages__intro {
     width: 490px;
