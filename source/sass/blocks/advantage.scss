@@ -24,6 +24,8 @@
 }
 
 .advantage__title {
+  padding: 0;
+  margin: 0;
   line-height: 26px;
 }
 
@@ -74,6 +76,7 @@
   position: relative;
 
   width: 258px;
+  padding: 0;
   margin: 0 auto;
   padding-bottom: 30px;
 
@@ -110,11 +113,15 @@
 
 .advantage__features-list {
   @include list-style;
-  padding: 0;
+  margin: 0;
+}
+
+.advantage__image-wrapper {
+  width: 320px;
+  height: 260px;
 }
 
 .advantage__image {
-  vertical-align: bottom;
   object-fit: cover;
 }
 

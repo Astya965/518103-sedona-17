@@ -1,6 +1,6 @@
 .features {
-  margin-bottom: 38px;
   padding-top: 7px;
+  margin-bottom: 37px;
 
   background-color: $bg-basic;
 }
@@ -21,7 +21,7 @@
     left: 21px;
 
     display: block;
-    width: 39px;
+    width: 38px;
     height: 37px;
 
     background-color: transparent;
@@ -74,6 +74,8 @@
 }
 
 .features__title {
+  padding: 0;
+  margin: 0;
   line-height: 26px;
 }
 
@@ -81,6 +83,8 @@
   display: inline-block;
 
   width: 220px;
+  padding: 0;
+  margin: 0;
   margin-top: 14px;
 
 

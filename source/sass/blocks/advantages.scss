@@ -7,6 +7,7 @@
 
   width: 255px;
   margin: 0 auto;
+  padding: 0;
 
   color: $text-main;
   line-height: 26px;
@@ -30,7 +31,7 @@
   @include list-style;
   width: 320px;
   margin: 0 auto;
-  margin-top: 26px;
+  margin-top: 27px;
 }
 
 .advantages__item {
