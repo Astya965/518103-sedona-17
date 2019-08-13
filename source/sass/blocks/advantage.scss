@@ -115,6 +115,7 @@
 
 .advantage__image {
   vertical-align: bottom;
+  object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -197,7 +198,6 @@
   .advantage__image {
     width: 800px;
     height: 400px;
-    margin-top: -70px;
   }
 
   .advantage__main--city .advantage__image {
