@@ -116,13 +116,8 @@
   margin: 0;
 }
 
-.advantage__image-wrapper {
-  width: 320px;
-  height: 260px;
-}
-
 .advantage__image {
-  object-fit: cover;
+  vertical-align: bottom;
 }
 
 @media (min-width: $tablet-width) {
@@ -145,7 +140,7 @@
 
   .advantage__wrapper {
     width: 256px;
-    padding-top: 43px;
+    padding-top: 45px;
     padding-bottom: 0;
 
     &--triangle {
@@ -167,7 +162,7 @@
 
   .advantage__text {
     width: 158px;
-    margin-top: 6px;
+    margin-top: 5px;
     padding-bottom: 45px;
 
     &--bordered::after {
@@ -177,7 +172,7 @@
 
   .advantage--main .advantage__text {
     width: 162px;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
 
   .advantage__text br {

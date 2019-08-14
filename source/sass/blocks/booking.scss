@@ -31,12 +31,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .booking {
+    width: auto;
+    margin: 0 auto;
+  }
+
   .booking__title {
     font-size: 30px;
   }
 
   .booking__text {
     width: 438px;
+    margin: 0 auto;
     margin-top: 31px;
   }
 
