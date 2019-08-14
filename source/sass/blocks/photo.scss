@@ -2,10 +2,6 @@
   min-height: 280px;
 }
 
-.photo__image {
-  border: none;
-}
-
 .photo__info {
   width: 280px;
   margin: 0 auto;
@@ -48,6 +44,7 @@
 
 .photo__image {
   vertical-align: bottom;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
