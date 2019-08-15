@@ -30,10 +30,12 @@ $white: hsl(0, 0%, 100%);
 $blue: hsl(203, 47%, 66%);
 $blue--hover: hsl(203, 42%, 58%);
 $blue--active: hsl(202, 44%, 54%);
+$blue-dark-opacity: hsla(219, 28%, 22%, 0.75);
 $gray: hsl(0, 0%, 95%);
 $gray-light: hsl(0, 0%, 90%);
+$gray-opacity: hsla(180, 100%, 0%, 1);
 $black: hsl(0, 0%, 0%);
-$black-opacity: hsla(180, 100%, 0%, 1);
+$black-opacity: hsla(0, 0%, 0%, 0.3);
 
 //Цвет фона
 $bg-basic: $white;
@@ -85,7 +87,12 @@ $bg-icon: $gray-light;
 $bg-icon--checked: $black;
 
 //Тени
-$main-shadow: $black-opacity;
+$main-shadow: $gray-opacity;
+$nav-shadow: $black-opacity;
+$modal-shadow: $blue-dark-opacity;
 
 //Иконки
 $copyright-icon: $black;
+$copyright-icon--hover: $blue;
+$social-icon--hover: $blue--hover;
+$social-icon--active: $blue--active;

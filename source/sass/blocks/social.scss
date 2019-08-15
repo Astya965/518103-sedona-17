@@ -30,11 +30,11 @@
 
 .social__item:hover,
 .social__item:focus {
-  background-color: #669ec0;
+  background-color: $social-icon--hover;
 }
 
 .social__item:active {
-  background-color: #5496bd;
+  background-color: $social-icon--active;
 }
 
 .social__item:active .social__img {
