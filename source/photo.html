@@ -55,6 +55,9 @@
             <li class="gallery__item photo">
               <a class="photo__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
                   <img class="photo__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография городка">
@@ -73,6 +76,9 @@
             <li class="gallery__item photo">
               <a class="photo__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
                   <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
@@ -91,6 +97,9 @@
             <li class="gallery__item photo">
               <a class="photo__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
                   <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на Север">
@@ -109,6 +118,9 @@
             <li class="gallery__item photo">
               <a class="photo__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                   <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола">
@@ -151,19 +163,19 @@
                 <button class="player__btn player__btn--replay">
                   <span class="visually-hidden">Повтор</span>
                   <svg class="player__icon" width="16" height="20">
-                    <use xlink:href="img/sprite.svg#icon-replay"></use>
+                    <use xlink:href="img/sprite.svg#icon-video-replay"></use>
                   </svg>
                 </button>
                 <button class="player__btn player__btn--subtitles">
                   <span class="visually-hidden">Субтитры</span>
                   <svg class="player__icon" width="32" height="20">
-                    <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+                    <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
                   </svg>
                 </button>
                 <button class="player__btn player__btn--fullscreen">
                   <span class="visually-hidden">Полный экран</span>
                   <svg class="player__icon" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+                    <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
                   </svg>
                 </button>
               </div>
