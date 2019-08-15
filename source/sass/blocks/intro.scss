@@ -2,10 +2,10 @@
   height: 158px;
   margin: 0 auto;
 
+  background-color: $bg-intro;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
-
-  background-repeat: no-repeat;
   background-position: bottom, 50% bottom;
+  background-repeat: no-repeat;
   background-size: 320px 26px, 780px 385px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -32,16 +32,16 @@
 }
 
 .intro__title {
-  padding: 0;
   margin: 0;
   margin-top: 39px;
+  padding: 0;
 }
 
 .intro__text {
   width: 275px;
-  padding: 0;
   margin: 0 auto;
   margin-top: 28px;
+  padding: 0;
 
   line-height: 24px;
 
@@ -58,6 +58,7 @@
     width: $tablet-width;
     height: 290px;
     margin: 0 auto;
+
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-size: 768px 57px, 768px 518px;
 
@@ -83,8 +84,9 @@
   }
 
   .intro__title {
-    font-size: 30px;
     margin-top: 68px;
+
+    font-size: 30px;
   }
 
   .intro__text {
@@ -105,6 +107,7 @@
     width: $desktop-width;
     height: 301px;
     margin: 0 auto;
+
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-size: 1200px 57px, 1200px 518px;
 
