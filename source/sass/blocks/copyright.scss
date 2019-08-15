@@ -7,18 +7,17 @@
   margin-top: 2px;
   margin-right: 14px;
 
-  color: $text-dark;
-
   line-height: 26px;
+  color: $text-dark;
 }
 
 .copyright__image {
-  fill: 000000;
+  fill: $copyright-icon;
 }
 
 .copyright__image:hover,
 .copyright__image:focus {
-  fill: #81b3d2;
+  fill: $copyright-icon--hover;
 }
 
 .copyright__image:active {

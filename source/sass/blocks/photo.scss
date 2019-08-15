@@ -16,8 +16,8 @@
   margin-top: 14px;
   padding: 0;
 
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   color: $text-dark;
 }
 
@@ -25,26 +25,68 @@
   margin: 0;
   padding: 0;
 
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   color: $text-main;
   text-transform: none;
 }
 
+.photo__image {
+  vertical-align: bottom;
+
+  border: none;
+}
+
 .photo__like {
+  position: relative;
+
   margin-top: 7px;
-  margin-left: 36px;
   margin-bottom: 18px;
+  margin-left: 36px;
+
+  cursor: pointer;
 
   &::before {
+    content: "";
+
     top: -1px;
     left: -36px;
+
+    z-index: 2;
+    position: absolute;
+
+    display: block;
+    width: 23px;
+    height: 21px;
+
+    background-color: transparent;
+    background-image: url("../img/icon-like.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+
+    opacity: 0.3;
   }
 }
 
-.photo__image {
-  vertical-align: bottom;
+.photo__like-button {
+  margin: 0;
+  padding: 0;
+
+  line-height: 24px;
+
+  background-color: inherit;
   border: none;
+
+  cursor: pointer;
+}
+
+.photo__like-value {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-dark;
 }
 
 @media (min-width: $tablet-width) {
@@ -66,8 +108,8 @@
     justify-content: flex-start;
 
     margin-top: 1px;
-    margin-left: 20px;
     margin-bottom: 3px;
+    margin-left: 20px;
 
     min-height: 76px;
   }
@@ -90,7 +132,7 @@
     }
   }
 
-  .gallery__item:first-child .photo__like {
+  .photo:first-child .photo__like {
     margin-left: 340px;
   }
 }
@@ -108,7 +150,7 @@
 
     width: 100%;
 
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: $black-opacity;
   }
 
   .photo__description {
@@ -126,7 +168,17 @@
     margin-left: 45px;
   }
 
-  .gallery__item:first-child .photo__like {
+  .photo:first-child .photo__like {
     margin-left: 845px;
+  }
+
+  .photo__like::before {
+    background-image: url("../img/icon-like--white.svg");
+
+    opacity: 1;
+  }
+
+  .photo__like-value {
+    color: $text-light;
   }
 }

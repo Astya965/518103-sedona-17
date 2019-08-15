@@ -7,10 +7,10 @@
 }
 
 .page-footer__tag {
-  color: $text-dark;
-  font-size: 21px;
   font-weight: 700;
+  font-size: 21px;
   line-height: 26px;
+  color: $text-dark;
 }
 
 .page-footer__social {
@@ -21,17 +21,18 @@
 }
 
 .page-footer__copyright {
-  color: $text-main;
   margin-top: 40px;
+
   line-height: 26px;
+  color: $text-main;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    width: 768px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 768px;
     margin-top: 0;
   }
 

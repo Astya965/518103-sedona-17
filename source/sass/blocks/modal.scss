@@ -7,13 +7,13 @@
   display: none;
   box-sizing: border-box;
   width: 320px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 
   text-align: center;
 
   background-color: $bg-basic;
-  box-shadow: 0 15px 20px 0 rgba(41, 52, 73, 0.75);
+  box-shadow: 0 15px 20px 0 $modal-shadow;
 
   transform: translate(-50%, -50%);
 
@@ -32,20 +32,20 @@
   margin: 0;
   margin-bottom: 19px;
 
-  color: $text-dark;
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 40px;
+  color: $text-dark;
 }
 
 .modal__text {
   margin: 0 auto;
   margin-bottom: 23px;
-  padding-left: 21px;
   padding-right: 20px;
+  padding-left: 21px;
 
-  color: $text-main;
   line-height: 24px;
+  color: $text-main;
 }
 
 .modal__button {
@@ -64,6 +64,7 @@
 
 .modal--show {
   display: block;
+
   animation: show 0.3s;
 }
 
@@ -82,10 +83,10 @@
 
   .modal__title {
     margin: 0 auto;
+    margin-bottom: 24px;
 
     font-size: 30px;
     line-height: 40px;
-    margin-bottom: 24px;
   }
 
   .modal--error .modal__title {
