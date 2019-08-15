@@ -132,6 +132,15 @@
   padding-top: 18px;
 }
 
+.review-form__input--error {
+  border: solid 1px red;
+}
+
+.review-form__input--error[type="tel"],
+.review-form__input--error[type="email"] {
+  border-right: solid 4px red;
+}
+
 .form-section__textarea {
   box-sizing: border-box;
   width: 100%;
@@ -244,7 +253,22 @@
 
 @media (min-width: $tablet-width) {
   .form-section--impress {
+    position: relative;
     order: -1;
+  }
+
+  .form-section--impress::after {
+    z-index: 2;
+    content: "";
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 1px;
+    height: calc(100% - 28px);
+
+    background-color: $gray;
   }
 
   .form-section {
@@ -287,6 +311,7 @@
   .form-section__legend {
     margin: 0;
 
+    text-align: left;
     font-size: 21px;
   }
 
@@ -296,6 +321,8 @@
     width: 400px;
     margin: 0 auto;
     padding: 0 60px;
+
+    text-align: center;
   }
 
   .form-section__option {

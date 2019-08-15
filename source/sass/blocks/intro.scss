@@ -1,5 +1,5 @@
 .intro__wrapper {
-  height: 156px;
+  height: 158px;
   margin: 0 auto;
 
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
@@ -22,21 +22,24 @@
 .intro__img {
   width: 230px;
   height: 40px;
-  margin-top: 50px;
+  margin-top: 51px;
 }
 
 .intro__wrapper--main .intro__img {
-  width: 282px;
+  width: 281px;
   height: 214px;
-  margin-top: 90px;
+  margin-top: 91px;
 }
 
 .intro__title {
-  margin-top: 40px;
+  padding: 0;
+  margin: 0;
+  margin-top: 39px;
 }
 
 .intro__text {
   width: 275px;
+  padding: 0;
   margin: 0 auto;
   margin-top: 28px;
 
@@ -50,21 +53,13 @@
   }
 }
 
-.intro__dash {
-  font-size: 11px;
-  vertical-align: top;
-}
-
 @media (min-width: $tablet-width) {
   .intro__wrapper {
     width: $tablet-width;
     height: 290px;
     margin: 0 auto;
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
-
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain, cover;
+    background-size: 768px 57px, 768px 518px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
@@ -78,13 +73,13 @@
   .intro__img {
     width: 460px;
     height: 80px;
-    margin-top: 94px;
+    margin-top: 95px;
   }
 
   .intro__wrapper--main .intro__img {
     width: 460px;
     height: 350px;
-    margin-top: 77px;
+    margin-top: 78px;
   }
 
   .intro__title {
@@ -98,7 +93,7 @@
 
     &--main {
       width: 490px;
-      margin-top: 48px;
+      margin-top: 50px;
 
       font-size: 21px;
     }
@@ -108,9 +103,10 @@
 @media (min-width: $desktop-width) {
   .intro__wrapper {
     width: $desktop-width;
-    height: 300px;
+    height: 301px;
     margin: 0 auto;
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+    background-size: 1200px 57px, 1200px 518px;
 
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -119,23 +115,22 @@
 
     &--main {
       height: 518px;
-      padding-top: 78px;
     }
   }
 
   .intro__img {
-    width: 460px;
-    height: 80px;
-    margin-top: 100px;
-  }
-
-  .intro__wrapper--main .intro__img {
-    width: 460px;
-    height: 350px;
-    margin-top: 77px;
+    margin-top: 104px;
   }
 
   .intro__title {
-    margin-top: 105px;
+    margin-top: 103px;
+  }
+
+  .intro__text {
+    margin-top: 25px;
+
+    &--main {
+      margin-top: 50px;
+    }
   }
 }

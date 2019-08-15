@@ -1,18 +1,23 @@
 .gallery__list {
   @include list-style;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .gallery__item {
-  padding-top: 22px;
-  padding-bottom: 0;
+  padding-top: 23px;
 
   border-top: 1px solid $gray;
+}
+
+.gallery__item:last-child {
   border-bottom: 1px solid $gray;
 }
 
 @media (min-width: $tablet-width) {
   .gallery__list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;

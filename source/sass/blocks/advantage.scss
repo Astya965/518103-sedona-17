@@ -24,6 +24,8 @@
 }
 
 .advantage__title {
+  padding: 0;
+  margin: 0;
   line-height: 26px;
 }
 
@@ -74,6 +76,7 @@
   position: relative;
 
   width: 258px;
+  padding: 0;
   margin: 0 auto;
   padding-bottom: 30px;
 
@@ -110,7 +113,7 @@
 
 .advantage__features-list {
   @include list-style;
-  padding: 0;
+  margin: 0;
 }
 
 .advantage__image {
@@ -137,7 +140,7 @@
 
   .advantage__wrapper {
     width: 256px;
-    padding-top: 43px;
+    padding-top: 45px;
     padding-bottom: 0;
 
     &--triangle {
@@ -159,7 +162,7 @@
 
   .advantage__text {
     width: 158px;
-    margin-top: 6px;
+    margin-top: 5px;
     padding-bottom: 45px;
 
     &--bordered::after {
@@ -169,7 +172,7 @@
 
   .advantage--main .advantage__text {
     width: 162px;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
 
   .advantage__text br {
@@ -197,7 +200,6 @@
   .advantage__image {
     width: 800px;
     height: 400px;
-    margin-top: -70px;
   }
 
   .advantage__main--city .advantage__image {
