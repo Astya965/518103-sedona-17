@@ -2,9 +2,9 @@
   box-sizing: border-box;
   width: 100%;
   padding-top: 22px;
-  padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 5px;
+  padding-left: 20px;
 
   &--contact {
     margin-top: 17px;
@@ -31,20 +31,21 @@
   max-width: 100%;
   margin: 0 auto;
 
-  text-align: center;
   line-height: 26px;
+  text-align: center;
 }
 
 .form-section__row {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+  width: 100%;
   margin-bottom: 20px;
 }
 
 .form-section__list {
   @include list-style;
+
   margin: 0;
   margin-bottom: 20px;
 }
@@ -53,9 +54,9 @@
   min-width: 74px;
   margin-right: 14px;
 
+  line-height: 26px;
   text-align: left;
   color: $text-main;
-  line-height: 26px;
 
   &--name {
     min-width: 36px;
@@ -74,20 +75,25 @@
 
 .form-section__input-wrapper {
   position: relative;
+
   display: flex;
   flex-grow: 1;
   padding-right: 55px;
 
   &::after {
     content: "";
+
+    right: 0;
+    top: 50%;
+
     position: absolute;
     width: 58px;
     height: 58px;
+
     background-color: $bg-icon;
-    background-repeat: no-repeat;
     background-position: center;
-    right: 0;
-    top: 50%;
+    background-repeat: no-repeat;
+
     transform: translateY(-50%);
   }
 }
@@ -103,6 +109,7 @@
 .form-section__input,
 .form-section__textarea {
   box-sizing: border-box;
+
   background-color: $bg-input;
   border: none;
 
@@ -120,11 +127,11 @@
 
 .form-section__input::placeholder,
 .form-section__textarea::placeholder {
-  font-family: $ptsans;
-  font-size: 18px;
   font-weight: 700;
-  color: $text-dark;
+  font-size: 18px;
   line-height: 26px;
+  font-family: $ptsans;
+  color: $text-dark;
   text-transform: none;
 }
 
@@ -163,11 +170,11 @@
 .form-section__label--check {
   position: relative;
 
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
   color: $text-dark;
   text-transform: none;
-  line-height: 26px;
 }
 
 .form-section__input + .form-section__label--radio::before,
@@ -183,6 +190,7 @@
 
   background-color: $bg-input;
   border-radius: 5px;
+
   transform: translateY(-50%);
 }
 
@@ -206,14 +214,15 @@
   content: "";
 
   position: absolute;
-  left: -63px;
   top: 50%;
+  left: -63px;
 
   width: 22px;
   height: 22px;
 
-  border-radius: 50%;
   background-color: $bg-icon--checked;
+  border-radius: 50%;
+
   transform: translateY(-50%);
 }
 
@@ -221,8 +230,8 @@
   content: "";
 
   position: absolute;
-  left: -61px;
   top: 50%;
+  left: -61px;
 
   width: 16px;
   height: 9px;
@@ -230,6 +239,7 @@
   background-color: transparent;
   border-left: 4px solid $bg-icon--checked;
   border-bottom: 4px solid $bg-icon--checked;
+
   transform: translateY(-80%) rotate(-45deg);
 }
 
@@ -254,16 +264,17 @@
 @media (min-width: $tablet-width) {
   .form-section--impress {
     position: relative;
+
     order: -1;
   }
 
   .form-section--impress::after {
-    z-index: 2;
     content: "";
 
+    z-index: 2;
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
 
     width: 1px;
     height: calc(100% - 28px);
@@ -275,9 +286,9 @@
     box-sizing: border-box;
     width: 100%;
     padding-top: 58px;
-    padding-left: 0;
     padding-right: 0;
     padding-bottom: 5px;
+    padding-left: 0;
 
     border-top: 2px solid $bg-input;
     border-bottom: none;
@@ -291,8 +302,8 @@
     }
 
     &--sight {
-      padding-top: 42px;
       margin-top: 16px;
+      padding-top: 42px;
     }
 
     &--massege {
@@ -311,8 +322,8 @@
   .form-section__legend {
     margin: 0;
 
-    text-align: left;
     font-size: 21px;
+    text-align: left;
   }
 
   .form-section--contact .form-section__legend,
@@ -358,32 +369,32 @@
   }
 
   .form-section__input + .form-section__label--radio::before {
-    left: -76px;
     top: 56%;
+    left: -76px;
   }
 
   .form-section__input + .form-section__label--check::before {
-    left: -80px;
     top: 56%;
+    left: -80px;
   }
 
   .form-section__input:checked + .form-section__label--radio::after {
-    left: -59px;
     top: 56%;
+    left: -59px;
   }
 
   .form-section__input:checked + .form-section__label--check::after {
-    left: -61px;
     top: 57%;
+    left: -61px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-section {
     padding-top: 58px;
-    padding-left: 0;
     padding-right: 0;
     padding-bottom: 5px;
+    padding-left: 0;
 
     &--name {
       padding-left: 79px;
@@ -399,8 +410,8 @@
     }
 
     &--sight {
-      padding-top: 42px;
       margin-top: 3px;
+      padding-top: 42px;
     }
 
     &--massege {
@@ -433,9 +444,9 @@
   }
 
   .form-section__input-wrapper {
-    min-width: 260px;
     flex-grow: 0;
     flex-shrink: 0;
+    min-width: 260px;
   }
 
   .form-section__input-wrapper--tel {
@@ -465,12 +476,11 @@
   .form-section--sight .form-section__option {
     width: auto;
     margin-right: 0;
-
     padding-left: 78px;
   }
 
   .form-section__label--check {
-    padding-left: 0;
     margin-right: 3px;
+    padding-left: 0;
   }
 }

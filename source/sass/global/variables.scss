@@ -11,6 +11,7 @@
 // Цвет фона ссылок
 // Цвет фона кнопок
 // Цвет полей формы
+// Тени
 
 //Размер вьюпорта
 $mobile-width-only: 767px;
@@ -32,6 +33,7 @@ $blue--active: hsl(202, 44%, 54%);
 $gray: hsl(0, 0%, 95%);
 $gray-light: hsl(0, 0%, 90%);
 $black: hsl(0, 0%, 0%);
+$black-opacity: hsla(180, 100%, 0%, 1);
 
 //Цвет фона
 $bg-basic: $white;
@@ -39,6 +41,7 @@ $bg-main: $blue;
 $bg-secondary: $gray;
 $bg-features: hsl(0, 0%, 93%);
 $bg-map: hsl(40, 20%, 94%);
+$bg-intro: hsl(209, 21%, 43%);
 
 //Цвет границ
 $border-dark: hsl(203, 27%, 53%);
@@ -80,3 +83,9 @@ $bg-input--active: $white;
 $border-input--active: $gray-light;
 $bg-icon: $gray-light;
 $bg-icon--checked: $black;
+
+//Тени
+$main-shadow: $black-opacity;
+
+//Иконки
+$copyright-icon: $black;

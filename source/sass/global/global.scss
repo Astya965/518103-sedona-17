@@ -2,11 +2,12 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: $ptsans, sans-serif;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
+  font-family: $ptsans, sans-serif;
   color: $text-main;
   text-transform: uppercase;
+
   background-color: $bg-basic;
 }
 

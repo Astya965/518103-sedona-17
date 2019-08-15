@@ -68,8 +68,8 @@
                   <h3 class="photo__title">Неродные просторы</h3>
                   <p class="photo__autor">Автор фото: Борис</p>
                 </div>
-                <div class="photo__like like">
-                  <button class="like__button"><span class="like__value">1350</span></button>
+                <div class="photo__like">
+                  <button class="photo__like-button"><span class="photo__like-value">1350</span></button>
                 </div>
               </div>
             </li>
@@ -89,8 +89,8 @@
                   <h3 class="photo__title">Местная растительность</h3>
                   <p class="photo__autor">Автор фото: Сергей</p>
                 </div>
-                <div class="photo__like like">
-                  <button class="like__button"><span class="like__value">143</span></button>
+                <div class="photo__like">
+                  <button class="photo__like-button"><span class="photo__like-value">143</span></button>
                 </div>
               </div>
             </li>
@@ -110,8 +110,8 @@
                   <h3 class="photo__title">Дорога на Север</h3>
                   <p class="photo__autor">Автор фото: Петр</p>
                 </div>
-                <div class="photo__like like">
-                  <button class="like__button"><span class="like__value">96</span></button>
+                <div class="photo__like">
+                  <button class="photo__like-button"><span class="photo__like-value">96</span></button>
                 </div>
               </div>
             </li>
@@ -131,8 +131,8 @@
                   <h3 class="photo__title">Мост Дьявола</h3>
                   <p class="photo__autor">Автор фото: Антон</p>
                 </div>
-                <div class="photo__like like">
-                  <button class="like__button"><span class="like__value">254</span></button>
+                <div class="photo__like">
+                  <button class="photo__like-button"><span class="photo__like-value">254</span></button>
                 </div>
               </div>
             </li>
@@ -144,37 +144,37 @@
             <h3 class="video__title">Все еще сомневаетесь?</h3>
             <p class="video__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
-          <div class="video__player player">
-            <div class="player__screen">
+          <div class="video__player">
+            <div class="video__screen">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-                <img class="player__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="200" alt="Заставка видео">
+                <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="200" alt="Заставка видео">
               </picture>
             </div>
-            <div class="player__controls">
-              <div class="player__scroll">
-                <div class="player__bar">
-                  <div class="player__bar-slider"></div>
+            <div class="video__controls">
+              <div class="video__scroll">
+                <div class="video__bar">
+                  <div class="video__bar-slider"></div>
                 </div>
-                <button class="player__btn player__btn--replay">
+                <button class="video__btn video__btn--replay">
                   <span class="visually-hidden">Повтор</span>
-                  <svg class="player__icon" width="16" height="20">
+                  <svg class="video__icon" width="16" height="20">
                     <use xlink:href="img/sprite.svg#icon-video-replay"></use>
                   </svg>
                 </button>
-                <button class="player__btn player__btn--subtitles">
+                <button class="video__btn video__btn--subtitles">
                   <span class="visually-hidden">Субтитры</span>
-                  <svg class="player__icon" width="32" height="20">
+                  <svg class="video__icon" width="32" height="20">
                     <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
                   </svg>
                 </button>
-                <button class="player__btn player__btn--fullscreen">
+                <button class="video__btn video__btn--fullscreen">
                   <span class="visually-hidden">Полный экран</span>
-                  <svg class="player__icon" width="20" height="20">
+                  <svg class="video__icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
                   </svg>
                 </button>
