@@ -142,13 +142,13 @@
   min-height: 58px;
   padding-top: 15px;
   padding-right: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   padding-left: 22px;
 
   &:active {
     padding-top: 11px;
     padding-right: 6px;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     padding-left: 18px;
   }
 }
@@ -156,6 +156,7 @@
 .form-section__textarea {
   box-sizing: border-box;
   width: 100%;
+  min-height: 160px;
   padding-top: 15px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -285,23 +286,7 @@
 
 @media (min-width: $tablet-width) {
   .form-section--impress {
-    position: relative;
-
     order: -1;
-  }
-
-  .form-section--impress::after {
-    content: "";
-
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    width: 1px;
-    height: calc(100% - 28px);
-
-    background-color: $gray;
   }
 
   .form-section {
@@ -339,6 +324,24 @@
     padding-bottom: 26px;
 
     border: none;
+  }
+
+  .form-section__list--line {
+    position: relative;
+  }
+
+  .form-section__list--line::after {
+    content: "";
+
+    z-index: 2;
+    position: absolute;
+    top: -80px;
+    right: 0;
+
+    width: 1px;
+    height: calc(100% + 75px);
+
+    background-color: $gray;
   }
 
   .form-section__legend {
