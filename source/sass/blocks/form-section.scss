@@ -63,16 +63,6 @@
   }
 }
 
-.form-section__input {
-  flex-grow: 1;
-
-  box-sizing: border-box;
-  width: 150px;
-  min-height: 58px;
-  padding-right: 5px;
-  padding-left: 22px;
-}
-
 .form-section__input-wrapper {
   position: relative;
 
@@ -110,16 +100,24 @@
 .form-section__textarea {
   box-sizing: border-box;
 
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $text-dark;
+  text-transform: none;
+
   background-color: $bg-input;
   border: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $bg-input--hover;
+
+    outline: none;
   }
 
   &:active {
-    padding-left: 18px;
-
     background-color: $bg-input--active;
     border: 4px solid $border-input--active;
   }
@@ -127,16 +125,48 @@
 
 .form-section__input::placeholder,
 .form-section__textarea::placeholder {
+  font: inherit;
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
-  font-family: $ptsans;
   color: $text-dark;
   text-transform: none;
+
+  opacity: 1; //Неочевидно, но фиксит проблему в Firefox
 }
 
-.form-section__input::placeholder {
-  padding-top: 18px;
+.form-section__input {
+  flex-grow: 1;
+
+  box-sizing: border-box;
+  width: 150px;
+  min-height: 58px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+
+  &:active {
+    padding-top: 11px;
+    padding-right: 6px;
+    padding-bottom: 16px;
+    padding-left: 18px;
+  }
+}
+
+.form-section__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  &:active {
+    padding-top: 11px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+  }
 }
 
 .review-form__input--error {
@@ -146,14 +176,6 @@
 .review-form__input--error[type="tel"],
 .review-form__input--error[type="email"] {
   border-right: solid 4px red;
-}
-
-.form-section__textarea {
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 160px;
-  padding-top: 15px;
-  padding-left: 20px;
 }
 
 .form-section__option {
