@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Отзыв </title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -69,7 +71,7 @@
             <legend class="form-section__legend title">Контактная информация:</legend>
               <ul class="form-section__list">
                 <li class="form-section__row">
-                  <label class="form-section__label text" for="tel"><span class="form-section__label--additional">Контактный</span> телефон<sup>*</sup>:</label>
+                  <label class="form-section__label text" for="tel"><span class="form-section__additional-text">Контактный</span> телефон<sup>*</sup>:</label>
                   <div class="form-section__input-wrapper form-section__input-wrapper--tel">
                     <input class="form-section__input" id="tel" type="tel" name="tel" pattern="[+][7][0-9]{10}" placeholder="Введите телефон" required="">
                   </div>
@@ -134,19 +136,19 @@
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#">
               <span class="visually-hidden">Twitter</span>
-              <svg class="social__img" width="17" height="15"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+              <svg class="social__img" width="17" height="15"><use xlink:href="#icon-twitter"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">
               <span class="visually-hidden">Facebook</span>
-              <svg class="social__img" width="9" height="19"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+              <svg class="social__img" width="9" height="19"><use xlink:href="#icon-facebook"></use></svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
+            <a class="social__link soScial__link--youtube" href="#">
               <span class="visually-hidden">Youtube</span>
-              <svg class="social__img" width="20" height="14"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+              <svg class="social__img" width="20" height="14"><use xlink:href="#icon-youtube"></use></svg>
             </a>
           </li>
         </ul>
@@ -155,7 +157,7 @@
             <p class="copyright__text text">Разработано</p>
             <span class="visually-hidden">HTML Академия</span>
             <svg class="copyright__image" width="27" height="34">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+              <use xlink:href="#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>

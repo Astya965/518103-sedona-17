@@ -1,5 +1,6 @@
 .container {
   min-width: 320px;
+  overflow-x:hidden;
 }
 
 @media (min-width: $tablet-width) {
