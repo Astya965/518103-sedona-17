@@ -52,7 +52,7 @@ gulp.task("webp", function () {
     "!source/img/**/bg-*.{png,jpg}"
   ])
     .pipe(webp({quality: 92}))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("sprite", function () {
@@ -115,5 +115,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html"), gulp.series("html", "refresh");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "webp", "sprite", "jsmin", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "jsmin", "html"));
 gulp.task("start", gulp.series("build", "server"));
