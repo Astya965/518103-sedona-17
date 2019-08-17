@@ -76,7 +76,7 @@
 
   line-height: 24px;
 
-  background-color: inherit;
+  background-color: transparent;
   border: none;
 
   cursor: pointer;
@@ -162,6 +162,10 @@
     margin-left: 22px;
 
     color: $text-light;
+  }
+
+  .photo__like-button {
+    background-color: transparent;
   }
 
   .photo__like {

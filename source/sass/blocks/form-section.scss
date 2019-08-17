@@ -8,6 +8,7 @@
 
   &--contact {
     margin-top: 17px;
+    padding-top: 20px;
     padding-bottom: 10px;
   }
 
@@ -16,7 +17,7 @@
   }
 
   &--sight {
-    margin-top: 18px;
+    margin-top: 16px;
     padding-top: 17px;
     padding-bottom: 4px;
   }
@@ -157,13 +158,13 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 160px;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-left: 20px;
 
   &:active {
-    padding-top: 11px;
+    padding-top: 10px;
     padding-right: 6px;
     padding-bottom: 6px;
     padding-left: 16px;
@@ -204,6 +205,7 @@
 .form-section__input + .form-section__label--check::before {
   content: "";
 
+  z-index: 1;
   position: absolute;
   left: -80px;
   top: 50%;
@@ -215,6 +217,8 @@
   border-radius: 5px;
 
   transform: translateY(-50%);
+
+  cursor: pointer;
 }
 
 .form-section__input:hover + .form-section__label--radio::before,
@@ -236,6 +240,7 @@
 .form-section__input:checked + .form-section__label--radio::after {
   content: "";
 
+  z-index: 2;
   position: absolute;
   top: 50%;
   left: -63px;
@@ -252,6 +257,7 @@
 .form-section__input:checked + .form-section__label--check::after {
   content: "";
 
+  z-index: 2;
   position: absolute;
   top: 50%;
   left: -61px;
@@ -277,7 +283,7 @@
 }
 
 .form-section--contact .form-section__row {
-  margin-bottom: 13px;
+  margin-bottom: 8px;
 }
 
 .form-section--sight .form-section__option {
@@ -305,7 +311,7 @@
     }
 
     &--contact {
-      padding-top: 26px;
+      padding-top: 22px;
     }
 
     &--sight {
@@ -429,6 +435,7 @@
     &--contact {
       padding-top: 75px;
       padding-left: 0;
+      padding-bottom: 10px;
     }
 
     &--impress {

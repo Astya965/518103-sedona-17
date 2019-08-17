@@ -45,7 +45,6 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
 .video__bar {
@@ -54,7 +53,7 @@
   width: 235px;
   height: 3px;
   margin-top: 22px;
-  margin-right: 22px;
+  margin-left: 22px;
 
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -181,10 +180,12 @@
     margin-top: 17px;
 
     border: none;
+  }
 
-    &--replay {
-      order: -1;
-    }
+  .video__btn--replay {
+    order: -1;
+
+    padding-right: 20px;
   }
 
   .video__icon {
@@ -225,6 +226,10 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
 
+  .video__scroll {
+    padding-right: 19px;
+  }
+
   .video__bar {
     width: 540px;
   }
@@ -232,5 +237,11 @@
   .video__bar-slider {
     top: -3px;
     left: 113px;
+  }
+
+  .video__btn--replay {
+    order: -1;
+
+    padding-right: 17px;
   }
 }
