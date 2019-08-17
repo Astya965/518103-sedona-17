@@ -1,4 +1,6 @@
 .copyright__link {
+  z-index: 1;
+
   display: flex;
   justify-content: center;
 }
@@ -15,11 +17,11 @@
   fill: $copyright-icon;
 }
 
-.copyright__image:hover,
-.copyright__image:focus {
+.copyright__link:hover .copyright__image,
+.copyright__link:focus .copyright__image {
   fill: $copyright-icon--hover;
 }
 
-.copyright__image:active {
+.copyright__link:active .copyright__image {
   opacity: 0.3;
 }

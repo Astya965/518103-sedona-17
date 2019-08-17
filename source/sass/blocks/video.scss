@@ -98,12 +98,12 @@
   fill: #5c6870;
 }
 
-.video__icon:hover,
-.video__icon:focus {
+.video__btn:hover .video__icon,
+.video__btn:focus .video__icon {
   fill: #333333;
 }
 
-.video__icon:active {
+.video__btn:active .video__icon {
   fill: #333333;
   opacity: 0.3;
 }
@@ -192,14 +192,14 @@
     fill: #ffffff;
   }
 
-  .video__icon:hover,
-  .video__icon:focus {
+  .video__btn:hover .video__icon,
+  .video__btn:focus .video__icon {
     fill: #ffffff;
 
     opacity: 0.6;
   }
 
-  .video__icon:active {
+  .video__btn:active .video__icon {
     opacity: 0.3;
   }
 }

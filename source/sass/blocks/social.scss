@@ -18,6 +18,7 @@
 }
 
 .social__link {
+  z-index: 1;
   position: relative;
 
   display: flex;
@@ -28,15 +29,15 @@
   height: 48px;
 }
 
-.social__item:hover,
-.social__item:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: $social-icon--hover;
 }
 
-.social__item:active {
+.social__link:active {
   background-color: $social-icon--active;
 }
 
-.social__item:active .social__img {
+.social__link:active .social__img {
   opacity: 0.3;
 }

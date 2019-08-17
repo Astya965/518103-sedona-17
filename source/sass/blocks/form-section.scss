@@ -221,15 +221,13 @@
   cursor: pointer;
 }
 
-.form-section__input:hover + .form-section__label--radio::before,
-.form-section__input:hover + .form-section__label--check::before,
-.form-section__input:focus + .form-section__label--radio::before,
-.form-section__input:focus + .form-section__label--check::before {
+.form-section__option:hover .form-section__input + .form-section__label--radio::before,
+.form-section__option:hover .form-section__input + .form-section__label--check::before {
   background-color: $bg-input--hover;
 }
 
-.form-section__input:active + .form-section__label--radio::before,
-.form-section__input:active + .form-section__label--check::before {
+.form-section__option:active .form-section__input + .form-section__label--radio::before,
+.form-section__option:active .form-section__input + .form-section__label--check::before {
   background-color: $bg-input--active;
 }
 
