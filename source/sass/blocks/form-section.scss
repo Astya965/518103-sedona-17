@@ -370,6 +370,7 @@
 
   .form-section--contact .form-section__row {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .form-section__input-wrapper {
@@ -465,6 +466,7 @@
   .form-section--contact .form-section__row {
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: baseline;
     width: 50%;
   }
 
@@ -479,7 +481,7 @@
   }
 
   .form-section__input-wrapper--email {
-    margin-left: 19px;
+    margin-left: 18px;
   }
 
   .form-section--contact .form-section__label {
