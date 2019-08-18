@@ -12,8 +12,7 @@
 }
 
 .page-main__map {
-  width: 100%;
-  margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 .page-main__gallery {
@@ -27,7 +26,7 @@
 
 .page-main__feedback {
   margin-top: 17px;
-  margin-bottom: 71px;
+  margin-bottom: 74px;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,7 +40,7 @@
   }
 
   .page-main__map {
-    margin-bottom: 11px;
+    margin-bottom: 17px;
   }
 
   .page-main__gallery {
@@ -68,7 +67,8 @@
   }
 
   .page-main__map {
-    margin-bottom: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .page-main__gallery {
